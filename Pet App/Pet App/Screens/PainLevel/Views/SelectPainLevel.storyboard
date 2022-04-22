@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Any Pain?-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelectPainLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SelectPainLevelViewController" customModule="Pet_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much pain does your pet seem to have?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UN-Y7-33L">
+                                <rect key="frame" x="20" y="129" width="374" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHR-N5-hGB">
+                                <rect key="frame" x="0.0" y="186.5" width="414" height="629.5"/>
+                                <connections>
+                                    <segue destination="tUI-nQ-wNf" kind="embed" id="bUx-A4-ZnS"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7Q-zI-Ecc">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5fn-qZ-PtG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sounds Right"/>
+                                <connections>
+                                    <action selector="didPressOkayButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RM9-Mv-Dff"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QHR-N5-hGB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="1Vl-Za-rCb"/>
+                            <constraint firstItem="6UN-Y7-33L" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="8Qe-3n-AeL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="N7Q-zI-Ecc" secondAttribute="bottom" constant="-34" id="9Kx-3B-DKI"/>
+                            <constraint firstItem="N7Q-zI-Ecc" firstAttribute="top" secondItem="QHR-N5-hGB" secondAttribute="bottom" id="CJE-qc-PcY"/>
+                            <constraint firstItem="QHR-N5-hGB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Rmm-Ew-rvH"/>
+                            <constraint firstItem="6UN-Y7-33L" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="41" id="TKi-XR-jy8"/>
+                            <constraint firstItem="N7Q-zI-Ecc" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="V1O-0W-rmG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6UN-Y7-33L" secondAttribute="trailing" constant="20" id="d9x-aF-s6n"/>
+                            <constraint firstItem="QHR-N5-hGB" firstAttribute="top" secondItem="6UN-Y7-33L" secondAttribute="bottom" id="rEp-hK-laP"/>
+                            <constraint firstItem="N7Q-zI-Ecc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="rcG-ze-PKl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Any Pain?" id="Adg-a8-ZpD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Unv-Jt-iWo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QYx-Oj-Cw0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSO-SW-sRw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="xoG-fR-ivA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehZ-ep-FvA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Pain Level View Controller-->
+        <scene sceneID="6FB-zw-PHa">
+            <objects>
+                <viewController storyboardIdentifier="PainLevelViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oxf-Gt-7Wh" customClass="PainLevelViewController" customModule="Pet_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2UF-66-GtS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cWj-hH-jGz">
+                                <rect key="frame" x="32" y="32" width="350" height="336"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pain_level_worst_possible" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-42-gxj">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="291"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="The worst pain possible?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-OV-0Jv">
+                                        <rect key="frame" x="0.0" y="307" width="350" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KJK-5A-MA5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cWj-hH-jGz" firstAttribute="top" secondItem="KJK-5A-MA5" secondAttribute="top" constant="-12" id="Saw-bq-4Ca"/>
+                            <constraint firstItem="KJK-5A-MA5" firstAttribute="bottom" secondItem="cWj-hH-jGz" secondAttribute="bottom" constant="32" id="hez-1a-FoJ"/>
+                            <constraint firstItem="KJK-5A-MA5" firstAttribute="trailing" secondItem="cWj-hH-jGz" secondAttribute="trailing" constant="32" id="u71-zf-mgY"/>
+                            <constraint firstItem="cWj-hH-jGz" firstAttribute="leading" secondItem="KJK-5A-MA5" secondAttribute="leading" constant="32" id="yca-oT-w1Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wUZ-Oi-gSA"/>
+                    <size key="freeformSize" width="414" height="400"/>
+                    <connections>
+                        <outlet property="imageView" destination="CSh-42-gxj" id="mEf-rP-gd0"/>
+                        <outlet property="label" destination="Wgj-OV-0Jv" id="o5O-7S-LBW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RB2-46-nKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201.44927536231884" y="799.55357142857144"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="oFF-Zy-A9a">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="tUI-nQ-wNf" sceneMemberID="viewController">
+                    <size key="freeformSize" width="414" height="400"/>
+                    <connections>
+                        <segue destination="oxf-Gt-7Wh" kind="push" identifier="showPainLevelViewController" id="bnT-BR-Oe2"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWF-B8-m53" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pain_level_worst_possible" width="311" height="311"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

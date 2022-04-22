@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Just Stop By!-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NoAppointmentRrequiredViewController" id="Y6W-OH-hqX" customClass="NoAppointmentRrequiredViewController" customModule="Pet_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="No Appointment Needed!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRU-fa-6Sy">
+                                <rect key="frame" x="16" y="104" width="382" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Just Stop by our office" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhs-mW-4Ol">
+                                <rect key="frame" x="16" y="149" width="382" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-7b-JCp">
+                                <rect key="frame" x="0.0" y="816" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Q1V-hN-UbW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Ok, thanks!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressOkay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="syV-ye-1Dr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_appointment_owl" translatesAutoresizingMaskIntoConstraints="NO" id="lc7-0a-fJZ">
+                                <rect key="frame" x="57" y="189" width="300" height="300"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kBz-7b-JCp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lc7-0a-fJZ" secondAttribute="bottom" constant="16" id="0YY-tT-889"/>
+                            <constraint firstItem="Dhs-mW-4Ol" firstAttribute="top" secondItem="iRU-fa-6Sy" secondAttribute="bottom" constant="16" id="6nr-lI-Rkj"/>
+                            <constraint firstItem="kBz-7b-JCp" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="74J-bL-5Wj"/>
+                            <constraint firstItem="Dhs-mW-4Ol" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="ADe-3E-TIV"/>
+                            <constraint firstItem="iRU-fa-6Sy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Cga-RH-iVO"/>
+                            <constraint firstItem="iRU-fa-6Sy" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="GqB-1k-DYV"/>
+                            <constraint firstItem="lc7-0a-fJZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Gqn-bX-S18"/>
+                            <constraint firstItem="kBz-7b-JCp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Idv-yc-YkX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dhs-mW-4Ol" secondAttribute="trailing" constant="16" id="NeZ-Tg-AGz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iRU-fa-6Sy" secondAttribute="trailing" constant="16" id="TkG-so-70n"/>
+                            <constraint firstItem="lc7-0a-fJZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qOf-Iy-f5W"/>
+                            <constraint firstAttribute="bottom" secondItem="kBz-7b-JCp" secondAttribute="bottom" id="rNd-78-hop"/>
+                            <constraint firstItem="lc7-0a-fJZ" firstAttribute="top" secondItem="Dhs-mW-4Ol" secondAttribute="bottom" constant="16" id="tyY-fY-ueh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lc7-0a-fJZ" secondAttribute="trailing" constant="16" id="xH1-La-SoY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Just Stop By!" id="W9s-NB-vmR"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="128.57142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s9L-rA-MLa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jqD-Ud-txr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GlX-aK-gIg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="l0Y-dk-GRz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mdm-MA-eV2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="no_appointment_owl" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
